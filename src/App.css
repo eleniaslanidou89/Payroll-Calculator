@@ -1,8 +1,5 @@
 .App {
   text-align: center;
-}
-
-.App-header {
   background: #005AA7;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
@@ -14,3 +11,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.App__section {
+  border: thick double #32a1ce;
+  padding: 50px;
+  border-radius: 25px;
+}
+
+
