@@ -1,16 +1,8 @@
 .App {
   text-align: center;
-  background: #005aa7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #fffde4,
-    #005aa7
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #fffde4,
-    #005aa7
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #005aa7;
+  background: -webkit-linear-gradient(to top, #fffde4, #005aa7);
+  background: linear-gradient(to top, #fffde4, #005aa7);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,10 +12,22 @@
   color: white;
 }
 
-.App__section {
+.App__Section h1 {
+  margin: 50px auto 30px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
-.Form__Button--submit {
+.App__Section--Form {
+  background: #7f7fd5;
+  background: -webkit-linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
+  border: thick double #32a1ce;
+  padding: 50px;
+  border-radius: 25px;
+}
+
+.Form__Button--Submit {
   margin-top: 50px;
 }
 
@@ -31,11 +35,8 @@
   margin-top: 20px;
 }
 
-.App__section--form {
-  background: #7F7FD5;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
-  border: thick double #32a1ce;
-  padding: 50px;
-  border-radius: 25px;
+.Form__Output--Result {
+  padding-top: 30px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }

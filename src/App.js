@@ -28,10 +28,17 @@ class App extends React.Component {
       this.setState({
         yearsOfExperience: 20 / 100,
       })
-    }
-    if (e.target.value >= 8 && e.target.value <= 10) {
+    } else if (e.target.value >= 8 && e.target.value <= 10) {
       this.setState({
-        yearsOfExperience: 50 / 100,
+        yearsOfExperience: 40 / 100,
+      })
+    } else if (e.target.value > 10) {
+      this.setState({
+        yearsOfExperience: 60 / 100,
+      })
+    } else {
+      this.setState({
+        yearsOfExperience: 0,
       })
     }
   }
@@ -87,7 +94,6 @@ class App extends React.Component {
 
   /*  SUBMIT THE FORM  */
   handleSubmit(e) {
-    console.log('state.income', this.state.income)
     this.state.output =
       this.state.basicSalary +
       this.state.yearsOfExperience * this.state.basicSalary
@@ -106,23 +112,16 @@ class App extends React.Component {
       this.state.output =
         this.state.output - this.state.output * this.state.income
     }
-    console.log('output', this.state.output)
     this.setState({ output: this.state.output })
-    console.log(
-      'experience: ' + this.state.value,
-      +this.state.selectValueLocation,
-      +this.state.selectValueIncome,
-      +this.state.selectRadio,
-      +this.state.output,
-    )
     e.preventDefault()
   }
 
   render() {
     return (
       <div className="App">
-        <div className="App__section">
-          <div className="App__section--form row">
+        <div className="App__Section">
+          <h1>Payroll Calculator</h1>
+          <div className="App__Section--Form row">
             <Form onSubmit={this.handleSubmit} className="col-12">
               <Form.Group className="mb-3">
                 <Form.Label>Experience:</Form.Label>
@@ -191,11 +190,13 @@ class App extends React.Component {
                   <option value="2">2019</option>
                 </Form.Select>
               </div>
-              <div className="Form__Button--submit">
+              <div className="Form__Button--Submit">
                 <Button variant="primary" type="submit">
                   Calculate Salary
                 </Button>
-                <p>kr {this.state.output}</p>
+                <div className="Form__Output">
+                  <p className="Form__Output--Result">{this.state.output}kr</p>
+                </div>
               </div>
             </Form>
           </div>
