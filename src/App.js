@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Form from 'react-bootstrap/Form'
@@ -19,7 +19,6 @@ class App extends React.Component {
     this.handleDropdownIncome = this.handleDropdownIncome.bind(this)
     this.handleProfession = this.handleProfession.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
-    // this.state.output = 0
   }
 
   /*  YEARS OF EXPERIENCE  */
@@ -101,16 +100,14 @@ class App extends React.Component {
         this.state.output -
         (36000 * this.state.income +
           (this.state.output - 45000) * (70 / 100) +
-          (this.state.output - (this.state.output - 45000) - 36000) * (50 / 100))
-      //console.log( (((36000*this.state.income)+((this.state.output-45000)*(70/100)))+(((this.state.output-(this.state.output-45000))-36000)*(50/100))))
+          (this.state.output - (this.state.output - 45000) - 36000) *
+            (50 / 100))
     } else if (this.state.output <= 36000) {
-      this.state.output = this.state.output - this.state.output * this.state.income
+      this.state.output =
+        this.state.output - this.state.output * this.state.income
     }
-    // console.log('dropdown', + this.state.selectValueLocation)
-    // console.log('income', + this.state.selectValueIncome)
-    // console.log('income', + this.state.selectproffession)
     console.log('output', this.state.output)
-    this.setState({output:this.state.output})
+    this.setState({ output: this.state.output })
     console.log(
       'experience: ' + this.state.value,
       +this.state.selectValueLocation,
@@ -198,9 +195,8 @@ class App extends React.Component {
                 <Button variant="primary" type="submit">
                   Calculate Salary
                 </Button>
-              <p>kr {this.state.output}</p>
+                <p>kr {this.state.output}</p>
               </div>
-              
             </Form>
           </div>
         </div>
