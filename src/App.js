@@ -76,7 +76,6 @@ class App extends React.Component {
   /*  RADIO BUTTONS FOR PROFESSION */
   handleProfession(e) {
     this.setState({ selectRadio: e.target.value })
-    console.log('radio', e.target.value)
     if (e.target.value === 'Developer') {
       this.setState({
         basicSalary: 30000,

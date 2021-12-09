@@ -1,42 +1,65 @@
+/* Variables */
+:root{
+  --min-height: 100vh;
+  --font-primary: #fafafa  ;
+  --clr-darkBlue: #005aa7;
+  --background-webkit-linear: -webkit-linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
+  --background-linear: linear-gradient(to top, #fffde4, #005aa7);
+  --radius-form: 25px;
+  --padding-form: 50px;
+  --border: thick double #32a1ce;
+  --font-size: calc(7px + 2vmin);
+  --title-margin: 50px auto 30px;
+  --shadow-title: 2px 2px 4px #000000;
+  --backgroundForm-webkit-linear: -webkit-linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
+  --backgroundForm-linear: linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
+  --shadow-salary-output:  2px 2px 4px #000000;
+}
+
 .App {
   text-align: center;
-  background: #005aa7;
-  background: -webkit-linear-gradient(to top, #fffde4, #005aa7);
-  background: linear-gradient(to top, #fffde4, #005aa7);
-  min-height: 100vh;
+  background: var(--clr-darkBlue);
+  background: var(--background-webkit-linear);
+  background: var(--background-linear);
+  min-height: var(--min-height);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: var(--font-size);
+  color: var(--font-primary);
 }
 
+/* Title */
 .App__Section h1 {
-  margin: 50px auto 30px;
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
+  margin: var(--title-margin);
+  color: var(--font-primary);
+  text-shadow: var(--shadow-title);
 }
 
+/* Form */
 .App__Section--Form {
-  background: #7f7fd5;
-  background: -webkit-linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
-  background: linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
-  border: thick double #32a1ce;
-  padding: 50px;
-  border-radius: 25px;
+  background: var(--clr-darkBlue);
+  background: var(--backgroundForm-webkit-linear);
+  background: var(--backgroundForm-linear);
+  border: var(--border);
+  padding: var(--padding-form);
+  border-radius: var(--radius-form);
 }
 
+/* Submit button */
 .Form__Button--Submit {
   margin-top: 50px;
 }
 
+/* Dropdown income */
 .Form__Dropdown--Income {
   margin-top: 20px;
 }
 
+/* Salary-output */
 .Form__Output--Result {
-  padding-top: 30px;
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
+  padding-top: 20px;
+  color: var(--font-primary);
+  text-shadow: var(--shadow-salary-output);
 }
