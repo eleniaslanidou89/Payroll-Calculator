@@ -51,14 +51,19 @@
   border-radius: var(--radius-form);
 }
 
-/* Submit button */
-.Form__Button--Submit {
-  margin-top: 50px;
+/* Select profession - radio buttons */
+.Form__Dropdown--Profession {
+  margin-top: 20px;
 }
 
 /* Dropdown income */
 .Form__Dropdown--Income {
   margin-top: 20px;
+}
+
+/* Submit button */
+.Form__Button--Submit {
+  margin-top: 50px;
 }
 
 /* Salary-output */
