@@ -21,7 +21,7 @@ class App extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
-  /*  YEARS OF EXPERIENCE  */
+  /*  Years of experience  */
   handleYearsofExperience(e) {
     this.setState({ value: e.target.value })
     if (e.target.value >= 4 && e.target.value <= 7) {
@@ -43,12 +43,12 @@ class App extends React.Component {
     }
   }
 
-  /*  DROP-DOWN FOR LOCATION  */
+  /*  Drop-down for location  */
   handleDropdownLocation(e) {
     this.setState({ selectValueLocation: e.target.value })
   }
 
-  /*  DROP-DOWN FOR INCOME  */
+  /*  Drop-down for income  */
   handleDropdownIncome(e) {
     this.setState({ selectValueIncome: e.target.value })
     if (e.target.value === '1' && this.state.selectValueLocation === '0') {
@@ -73,7 +73,7 @@ class App extends React.Component {
     }
   }
 
-  /*  RADIO BUTTONS FOR PROFESSION */
+  /*  Radion buttons for profession */
   handleProfession(e) {
     this.setState({ selectRadio: e.target.value })
     if (e.target.value === 'Developer') {
@@ -91,7 +91,7 @@ class App extends React.Component {
     }
   }
 
-  /*  SUBMIT THE FORM  */
+  /*  Submit the form */
   handleSubmit(e) {
     this.state.output =
       this.state.basicSalary +
