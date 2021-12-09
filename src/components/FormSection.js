@@ -6,12 +6,12 @@ import Button from 'react-bootstrap/Button'
 class FormSection extends Component {
   constructor(props) {
     super(props)
-    this.state = { value: '' }
-    this.state = { selectValueLocation: '' }
-    this.state = { selectValueIncome: '' }
-    this.state = { selectRadio: '' }
-    this.state = { salary: 0 }
-    this.state = { output: 0 }
+    this.state = { selectValueLocation: '' };
+    this.state = { selectValueIncome: 0 };
+    this.state = { selectRadio: '' };
+    this.state = { salary: 0 };
+    this.state = { output: 0 };
+    this.state = {value: ''}
 
     this.handleYearsofExperience = this.handleYearsofExperience.bind(this)
     this.handleDropdownLocation = this.handleDropdownLocation.bind(this)
@@ -121,6 +121,7 @@ class FormSection extends Component {
           <Form.Group>
             <Form.Label>Experience:</Form.Label>
             <Form.Control
+              name="value"
               type="text"
               placeholder="Years of experience"
               value={this.state.value}
