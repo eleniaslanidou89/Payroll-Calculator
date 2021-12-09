@@ -2,6 +2,7 @@
 :root {
   --min-height: 100vh;
   --font-color-primary: #fafafa;
+  --font-color-form-section: #000046;
   --font-color-mobile: #000000;
   --clr-darkBlue: #005aa7;
   --background-webkit-linear: -webkit-linear-gradient(to bottom,#91eae4,#86a8e7,#7f7fd5);
@@ -31,7 +32,7 @@
   align-items: center;
   justify-content: center;
   font-size: var(--font-size-desktop);
-  color: var(--font-color-primary);
+  color: var(--font-color-form-section);
 }
 
 /* Title */
