@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
@@ -118,7 +118,7 @@ class FormSection extends Component {
     return (
       <div className="App__Section--Form row">
         <Form onSubmit={this.handleSubmit} className="col-12">
-          <Form.Group className="mb-3">
+          <Form.Group>
             <Form.Label>Experience:</Form.Label>
             <Form.Control
               type="text"
@@ -127,51 +127,57 @@ class FormSection extends Component {
               onChange={this.handleYearsofExperience}
             />
           </Form.Group>
-          <Form.Label>Profession:</Form.Label>
-          {['radio'].map((type) => (
-            <div
-              key={`inline-${type}`}
-              className="mb-3"
-              value={this.state.selectRadio}
-              onChange={this.handleProfession}
-            >
-              <Form.Check
-                inline
-                label="Developer"
-                value="Developer"
-                name="group1"
-                type={type}
-                id={`inline-${type}-1`}
-              />
-              <Form.Check
-                inline
-                label="Teacher"
-                value="Teacher"
-                name="group1"
-                type={type}
-                id={`inline-${type}-2`}
-              />
-              <Form.Check
-                inline
-                label="Cashier"
-                value="Cashier"
-                name="group1"
-                type={type}
-                id={`inline-${type}-2`}
-              />
-            </div>
-          ))}
+          <div className="Form__Dropdown--Profession">
+            <Form.Group>
+              <Form.Label>Profession:</Form.Label>
+              {['radio'].map((type) => (
+                <div
+                  key={`inline-${type}`}
+                  className="mb-3"
+                  value={this.state.selectRadio}
+                  onChange={this.handleProfession}
+                >
+                  <Form.Check
+                    inline
+                    label="Developer"
+                    value="Developer"
+                    name="group1"
+                    type={type}
+                    id={`inline-${type}-1`}
+                  />
+                  <Form.Check
+                    inline
+                    label="Teacher"
+                    value="Teacher"
+                    name="group1"
+                    type={type}
+                    id={`inline-${type}-2`}
+                  />
+                  <Form.Check
+                    inline
+                    label="Cashier"
+                    value="Cashier"
+                    name="group1"
+                    type={type}
+                    id={`inline-${type}-2`}
+                  />
+                </div>
+              ))}
+            </Form.Group>
+          </div>
           <div className="Form__Dropdown--Location">
-            <Form.Label>Location:</Form.Label>
-            <Form.Select
-              aria-label="Default select example"
-              value={this.state.selectValueLocation}
-              onChange={this.handleDropdownLocation}
-            >
-              <option>Select location</option>
-              <option value="0">Stockholm</option>
-              <option value="1">Gothenburg</option>
-            </Form.Select>
+            <Form.Group>
+              <Form.Label>Location:</Form.Label>
+              <Form.Select
+                aria-label="Default select example"
+                value={this.state.selectValueLocation}
+                onChange={this.handleDropdownLocation}
+              >
+                <option>Select location</option>
+                <option value="0">Stockholm</option>
+                <option value="1">Gothenburg</option>
+              </Form.Select>
+            </Form.Group>
           </div>
           <div className="Form__Dropdown--Income">
             <Form.Label>Income Year:</Form.Label>
