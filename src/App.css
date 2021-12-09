@@ -1,19 +1,23 @@
 /* Variables */
-:root{
+:root {
   --min-height: 100vh;
-  --font-primary: #fafafa  ;
+  --font-color-primary: #fafafa;
+  --font-color-mobile: #000000;
   --clr-darkBlue: #005aa7;
-  --background-webkit-linear: -webkit-linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
+  --background-webkit-linear: -webkit-linear-gradient(to bottom,#91eae4,#86a8e7,#7f7fd5);
   --background-linear: linear-gradient(to top, #fffde4, #005aa7);
   --radius-form: 25px;
   --padding-form: 50px;
   --border: thick double #32a1ce;
-  --font-size: calc(9px + 2vmin);
+  --font-size-mobile: calc(7px + 2vmin);
+  --font-size-tablets: calc(8px + 2vmin);
+  --font-size-desktop: calc(10px + 2vmin);
+  --font-size-xl: calc(12px + 2vmin);
   --title-margin: 50px auto 30px;
   --shadow-title: 2px 2px 4px #000000;
-  --backgroundForm-webkit-linear: -webkit-linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
-  --backgroundForm-linear: linear-gradient(to bottom, #91eae4, #86a8e7, #7f7fd5);
-  --shadow-salary-output:  2px 2px 4px #000000;
+  --backgroundForm-webkit-linear: -webkit-linear-gradient(to bottom,#91eae4,#86a8e7,#7f7fd5);
+  --backgroundForm-linear: linear-gradient(to bottom,#91eae4,#86a8e7,#7f7fd5);
+  --shadow-salary-output: 2px 2px 4px #000000;
 }
 
 .App {
@@ -26,14 +30,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size);
-  color: var(--font-primary);
+  font-size: var(--font-size-desktop);
+  color: var(--font-color-primary);
 }
 
 /* Title */
 .App__Section h1 {
   margin: var(--title-margin);
-  color: var(--font-primary);
+  color: var(--font-color-primary);
   text-shadow: var(--shadow-title);
 }
 
@@ -62,4 +66,61 @@
   padding-top: 20px;
   color: var(--font-primary);
   text-shadow: var(--shadow-salary-output);
+}
+
+/***************   RESPONSIVE DESIGN   ***************/
+
+/*** Mobile phones view ***/
+@media (min-width: 410px) {
+  .App {
+    font-size: var(--font-size-mobile);
+    background: none;
+  }
+
+  .App__Section h1 {
+    color: var(--font-color-mobile);
+  }
+}
+
+/*** Tablets view ***/
+@media (min-width: 768px) {
+  .App {
+    font-size: var(--font-size-tablets);
+    background: var(--clr-darkBlue);
+    background: var(--background-webkit-linear);
+    background: var(--background-linear);
+  }
+
+  .App__Section h1 {
+    margin: var(--title-margin);
+    color: var(--font-color-primary);
+    text-shadow: var(--shadow-title);
+  }
+}
+
+/*** Desktop view ***/
+@media (min-width: 992px) {
+  .App {
+    font-size: var(--font-size-desktop);
+    background: var(--clr-darkBlue);
+    background: var(--background-webkit-linear);
+    background: var(--background-linear);
+  }
+  .App__Section h1 {
+    margin: var(--title-margin);
+    color: var(--font-color-primary);
+    text-shadow: var(--shadow-title);
+  }
+}
+
+/*** Extra large desktop view ***/
+@media (min-width: 1200px) {
+  .App {
+    font-size: var(--font-size-xl);
+  }
+  .App__Section h1 {
+    margin: var(--title-margin);
+    color: var(--font-color-primary);
+    text-shadow: var(--shadow-title);
+  }
 }
