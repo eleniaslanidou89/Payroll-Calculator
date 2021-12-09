@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+<h1 align="center">Welcome to readme-md-file 👋</h1>
+<h2 align="center">Payroll Calculator</h2>
+<p align="center">In this project the users will be able to fill in information about
+  their profession and employment in a form and then see what their salary will be after tax.</p>
+  
+## ✨ Demo
+![image](https://user-images.githubusercontent.com/57090719/145461751-8b9ccc4b-5147-4daa-8e9a-eb060c039123.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Generated `README.md`:
+![image](https://user-images.githubusercontent.com/57090719/145461862-6d9b5f14-be5c-4ab6-8174-78b232937caa.png)
 
-In the project directory, you can run:
+<h3 align="center">Cloning a repository</h3>
 
-### `yarn start`
+1. On GitHub.com, navigate to the main page of the repository.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Above the list of files, click 📃 Code.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![image](https://user-images.githubusercontent.com/57090719/145462250-4dd35339-1480-40b5-b49b-ca9f6cb27e62.png)
 
-### `yarn test`
+3. To clone the repository using HTTPS, under "Clone with HTTPS", click . To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click . To clone a repository using GitHub CLI, click Use GitHub CLI, then click ![image](https://user-images.githubusercontent.com/57090719/145462670-842d3d32-9f8d-4cea-a56d-ae3bbf2b4218.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Open Git Bash.
 
-### `yarn build`
+5. Change the current working directory to the location where you want the cloned directory.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. Type git clone, and then paste the URL you copied earlier.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ![image](https://user-images.githubusercontent.com/57090719/145463150-d10bb65d-9273-4cae-8c82-127f2aec3b85.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+7. Press Enter to create your local clone.
